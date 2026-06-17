@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Washing Machine</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="company">
+                <h2>7G Wonders</h2>
+            </div>
+            <div class="products">
+                <ul>
+                <li>Home</li>
+                <li id="cart-n">Add To Cart <span id="cart-c">(0)</span></li> 
+                <li>laptops</li>
+                <li>mobiles</li>
+                <li>Ac</li>
+                <li>Tv</li>
+                <li>camera</li>
+                <li>watch</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="product-detail">
+            <div class="pro-left">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRWjNSXtURbPazzumjmfTGKZUpEHzB4qZd8EjzbcNI7Fu7BW8BglFu49iSjRhXi9Z98k1CaWlJ_OhMG0boFTvbxIrMR6M5mWpf8GX0KIlfRFV4uezTNR4AeTiqgRrlMoIcsUQMlQA&usqp=CAc" alt="">
+            </div>
+            <div class="pro-right">
+                <h4>
+                   7 Kg, 5 Star, DD Technology, Steam Wash, 6 Motion DD, Fully-Automatic Front Load Washing Machine (FHB1207Z2M, Allergy Care, In-Built Heater, Touch Panel, Middle Black)
+                <li>    
+                Product Dimensions	:44D x 60W x 85H Centimeters,
+                Brand   :	LG,
+                Capacity:	7 Kilograms,
+                Special Feature:	Auto Restart, Child Lock, High Efficiency, Hygiene Steam, Inverter
+                Access Location:	Front Load.
+                </li>
+                </h4>
+                <ul>
+                    <li>Deal Price: ₹35,900  </li>
+                    <li> Offer Price: (inclusive of up to ₹1,500 instant bank discount or coupon)  </li>
+                    <li>MRP:₹49,990</li>
+                    <li> You save  Up to ₹14,090 (28%) </li>
+                    <li>EMI Option:Starts around ₹1,700/month</li>
+                </ul>
+                <div class="pro-button">
+                <button class="addcart">ADD TO CART</button>
+                <button class="buy">BUY</button>
+            </div>
+            </div>
+            
+        </div>
+         <script>
+        let cartItem=0;
+        const addtocartButton=document.querySelector('.addcart');
+        const cartDisplay=document.getElementById('cart-c');
+        addtocartButton.addEventListener('click',function()
+        {
+            cartItem++;
+            cartDisplay.textContent=`(${cartItem})`;
+            alert('Item added to your cart!');
+        });
+        </script>
+    </body>
+</html>

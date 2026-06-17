@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Apple iPhone 16</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="company">
+                <h2>7G Wonders</h2>
+            </div>
+            <div class="products">
+                <ul>
+                <li>Home</li>
+                <li id="cart-n">Add To Cart <span id="cart-c">(0)</span></li>
+                <li>laptops</li>
+                <li>mobiles</li>
+                <li>Ac</li>
+                <li>Tv</li>
+                <li>camera</li>
+                <li>watch</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="product-detail">
+            <div class="pro-left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThl2vDuGj799MVrnBCQHpR5CfTDbIgWdDVakCLHUkaSw&s=10" alt="">
+            </div>
+            <div class="pro-right">
+                <h4>
+                Apple iPhone 17 Pro 512 GB: 15.93 cm (6.3″) Display with Promotion up to 120Hz, A19 Pro Chip, Breakthrough Battery Life, Pro Fusion Camera System with Center Stage Front Camera; Deep orange
+                <li>
+                Brand           :Apple,
+                Operating System:iOS,
+                RAM Memory      :Installed Size	0.1 GB,
+                CPU Model       :Others,
+                CPU Speed	    :0.1 GHz
+                </li>
+                </h4>
+                <ul>
+                    <li>Deal Price:  ₹62,900</li>
+                    <li> Offer Price: ₹59,405  </li>
+                    <li>MRP: ₹69,900 </li>
+                    <li> You save ₹10,495 (Flat ₹7,000 discount + ₹3,495 bank offer) </li>
+                    <li>EMI Option:Standard EMI starts from ₹2,417/month; No Cost EMI available for up to 6 months</li>
+                </ul>
+                <div class="pro-button">
+                <button class="addcart">ADD TO CART</button>
+                <button class="buy">BUY</button>
+            </div>
+            </div>
+            
+        </div>
+         <script>
+        let cartItem=0;
+        const addtocartButton=document.querySelector('.addcart');
+        const cartDisplay=document.getElementById('cart-c');
+        addtocartButton.addEventListener('click',function()
+        {
+            cartItem++;
+            cartDisplay.textContent=`(${cartItem})`;
+            alert('Item added to your cart!');
+        });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>OnePlus Pad Lite</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="company">
+                <h2>7G Wonders</h2>
+            </div>
+            <div class="products">
+                <ul>
+                <li>Home</li>
+                <li id="cart-n">Add To Cart <span id="cart-c">(0)</span></li> 
+                <li>laptops</li>
+                <li>mobiles</li>
+                <li>Ac</li>
+                <li>Tv</li>
+                <li>camera</li>
+                <li>watch</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="product-detail">
+            <div class="pro-left">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSmXCee6d297USHlDPuzBsf1TcN_696PX9DScOf3ZNVttOQpampPPTqv0MpRtMLGlvjo4xhIZ8XhA6eeXgc03OI7A9zsiGBwsYK430zwTmJpFTaHkcq1bBKAQ" alt="">
+            </div>
+            <div class="pro-right">
+                <h4>
+                    OnePlus Pad Lite with Biggest Battery in Segment 9340 mAh, 11"(27.94 cm) Display with 500 nits Brightness & 11 Hrs of Video Playback, 6GB RAM 128GB Storage, WiFi, Aero Blue
+                </h4>
+                <ul>
+                    <li>Deal Price:₹18,999 </li>
+                    <li> Offer Price: ₹17,499 (inclusive of up to ₹1,500 instant bank discount or coupon)  </li>
+                    <li>MRP:₹19,999 </li>
+                    <li> You save  Up to  ₹2,500 (₹1,000 Flat Discount + ₹1,500 Bank Offer)</li>
+                    <li>EMI Option: No Cost EMI available for 3 months at ₹6,333/mo; standard EMI starts from approx. ₹668/month</li>
+                </ul>
+                <div class="pro-button">
+                <button class="addcart">ADD TO CART</button>
+                <button class="buy">BUY</button>
+            </div>
+            </div>
+            
+        </div>
+         <script>
+        let cartItem=0;
+        const addtocartButton=document.querySelector('.addcart');
+        const cartDisplay=document.getElementById('cart-c');
+        addtocartButton.addEventListener('click',function()
+        {
+            cartItem++;
+            cartDisplay.textContent=`(${cartItem})`;
+            alert('Item added to your cart!');
+        });
+        </script>
+    </body>
+</html>

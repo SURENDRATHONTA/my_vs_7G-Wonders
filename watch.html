@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <title></title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="company">
+                <h2>7G Wonders</h2>
+            </div>
+            <div class="products">
+                <ul>
+                <li>Home</li>
+                <li id="cart-n">Add To Cart <span id="cart-c">(0)</span></li> 
+                <li>laptops</li>
+                <li>mobiles</li>
+                <li>Ac</li>
+                <li>Tv</li>
+                <li>camera</li>
+                <li>watch</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="product-detail">
+            <div class="pro-left">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR9iLMJlJlK-JzNcq_Oalh1al0n-zxcMaGK7PwCo1Q-v8PQKqiBiO0aeXOXZ6Ze9vUqDw1demIuETboW3HdjEheAx3RYuOQKGD-J9Y2rbIav52fyRbfHw8MVio" alt="">
+            </div>
+            <div class="pro-right">
+                <h4>
+                  Fire-Boltt Ninja Call Pro Plus Bluetooth Calling Smart Watch, 1.83″ HD Display, AI Voice Assistant, 120+ Sports Modes, IP67 Waterproof, SpO2 & Heart Rate Monitor Smartwatch for Men & Women - Blue
+                  <li>
+                    Operating System    :WatchOS,
+                    Memory Storage Capacity:	128 MB,
+                    Special Feature:Accelerometer, Activity Tracker, Alarm Clock, Calorie Tracker, Camera, Bluetooth Calling, IP67 Smartwatch, 1.83" Big Display, Built In Mic & Speaker, Voice Assistant, Games, Find Phone, Daily Workout Memory, Distance Tracker, Multisport Tracker, Music Player, Notifications, Pedometer, Phone Call, Sedentary Reminder, Sleep Monitor, Text message, Time Display, Spo2 (Blood Oxygen Monitoring), Heart Rate Tracking,
+                    Battery Capacity:	280 Milliamp Hours,
+                    Connectivity Technology:Bluetooth.
+                  </li> 
+                </h4>
+                <ul>
+                    
+                    <li> Offer Price: ₹1,499  </li>
+                    <li>MRP:₹8,999</li>
+                    <li> You save  Up to ₹7,500 (83%) </li>
+                    <li>EMI Option:Available</li>
+                </ul>
+                <div class="pro-button">
+                <button class="addcart">ADD TO CART</button>
+                <button class="buy">BUY</button>
+            </div>
+            </div>
+            
+        </div>
+         <script>
+        let cartItem=0;
+        const addtocartButton=document.querySelector('.addcart');
+        const cartDisplay=document.getElementById('cart-c');
+        addtocartButton.addEventListener('click',function()
+        {
+            cartItem++;
+            cartDisplay.textContent=`(${cartItem})`;
+            alert('Item added to your cart!');
+        });
+        </script>
+    </body>
+</html>

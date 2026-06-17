@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Beardo Ball Safe Trimmer</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="company">
+                <h2>7G Wonders</h2>
+            </div>
+            <div class="products">
+                <ul>
+                <li>Home</li>
+                <li id="cart-n">Add To Cart <span id="cart-c">(0)</span></li>
+                <li>laptops</li>
+                <li>mobiles</li>
+                <li>Ac</li>
+                <li>Tv</li>
+                <li>camera</li>
+                <li>watch</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="product-detail">
+            <div class="pro-left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwAoXg87xUDqVxMZrB0UNb66PsXC4QsG33xYHejH9dCQ&s" alt="">
+            </div>
+            <div class="pro-right">
+                <h4>
+                BEARDO Ball Safe Trimmer For Men|Fast Charging Trimmer For Intimate Parts, Beard, Body|Body Grooming Kit - No Nicks Or Cuts, Powerful Motor, Type C, Fast Charging, 110-Min Runtime,Black
+                
+                </h4>
+                <ul>
+                    <li>Deal Price: ₹1,495-₹1,599</li>
+                    <li>MRP:₹2,199 </li>
+                    <li> You save ₹600 – ₹704  (27% – 32% off)</li>
+                    <li>EMI Option: No Cost EMI available </li>
+                </ul>
+                <div class="pro-button">
+                <button class="addcart">ADD TO CART</button>
+                <button class="buy">BUY</button>
+            </div>
+            </div>
+            
+        </div>
+         <script>
+        let cartItem=0;
+        const addtocartButton=document.querySelector('.addcart');
+        const cartDisplay=document.getElementById('cart-c');
+        addtocartButton.addEventListener('click',function()
+        {
+            cartItem++;
+            cartDisplay.textContent=`(${cartItem})`;
+            alert('Item added to your cart!');
+        });
+        </script>
+    </body>
+</html>

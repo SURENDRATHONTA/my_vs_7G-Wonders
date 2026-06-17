@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>login-7G Wonders</title>
+</head>
+<body>
+     <div id="overlay" class="overlay">
+        <div class="box">
+            <h2>Welcome to 7G Wonders</h2>
+            <div class="iu">
+           <input type="text" id="username" placeholder="Enter Username">
+            </div>
+            <div class="iu">
+           <input type="password" id="password" placeholder="Enter password">
+           <i class="fa-solid fa-eye" id="Password"></i>
+            </div>
+            <div class="or">
+                <label class="remember me">
+                    <input type="checkbox">remember me
+                </label>
+
+                 <a href="#" class="forgot">Forgot password?</a>
+            </div>
+            <button id="submit" class="btn">login</button>
+            <p class="register-text">Don`t have an account? <a href="#">Register</a></p>
+            
+        </div>
+        <script>
+            const passwordInput = document.getElementById('password');
+            const eyeIcon = document.getElementById('Password');
+
+        eyeIcon.addEventListener('click', function () {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.classList.remove('fa-eye');
+                eyeIcon.classList.add('fa-eye-slash'); 
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.classList.remove('fa-eye-slash');
+                eyeIcon.classList.add('fa-eye'); 
+            }
+        });
+
+        const loginButton=document.getElementById('submit');
+        const loginOverlay =document.getElementById('overlay');
+        const username=document.getElementById('username');
+        const password=document.getElementById('password');
+        loginButton.addEventListener('click', function() 
+        {
+            if (username.value !== "" && password.value !== "")
+        {
+            window.location.href="website.html";
+        }
+        else{
+            alert("Please enter both a username and a password to enter 7G Wonders!");
+        }
+
+        });
+        </script>
+    
+</body>
+</html>

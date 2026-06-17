@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Bajaj Gx1 Mixer Grinder</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="company">
+                <h2>7G Wonders</h2>
+            </div>
+            <div class="products">
+                <ul>
+                <li>Home</li>
+                <li id="cart-n">Add To Cart <span id="cart-c">(0)</span></li> 
+                <li>laptops</li>
+                <li>mobiles</li>
+                <li>Ac</li>
+                <li>Tv</li>
+                <li>camera</li>
+                <li>watch</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="product-detail">
+            <div class="pro-left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoAjlM4gZxMpQ4QOFGUDvil-sb65OJFjz1cD_bWsvK1w&s=10" alt="">
+            </div>
+            <div class="pro-right">
+                <h4>
+                    Bajaj 500 Watt GX-1 Mixer Grinder with 3 Jars- white&black
+                </h4>
+                <ul>
+                    <li>Deal Price: ₹2,399</li>
+                    <li> Offer Price:  ₹2,199  </li>
+                    <li>MRP: ₹4,125 </li>
+                    <li> You save   ₹1,926</li>
+                    <li>EMI Option:  Standard EMI starts at ₹84/month; No Cost EMI offers are available on select cards.</li>
+                </ul>
+                <div class="pro-button">
+                <button class="addcart">ADD TO CART</button>
+                <button class="buy">BUY</button>
+            </div>
+            </div>
+            
+        </div>
+         <script>
+        let cartItem=0;
+        const addtocartButton=document.querySelector('.addcart');
+        const cartDisplay=document.getElementById('cart-c');
+        addtocartButton.addEventListener('click',function()
+        {
+            cartItem++;
+            cartDisplay.textContent=`(${cartItem})`;
+            alert('Item added to your cart!');
+        });
+        </script>
+    </body>
+</html>
